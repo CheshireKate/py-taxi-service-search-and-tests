@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "debug_toolbar",
     "crispy_bootstrap4",
-   "crispy_forms",
+    "crispy_forms",
     "taxi",
 ]
 
@@ -145,4 +145,3 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-CRISPY_TEMPLATE_PACK="bootstrap4"
