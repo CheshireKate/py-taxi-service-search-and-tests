@@ -43,9 +43,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "debug_toolbar",
+    "taxi",
     "crispy_bootstrap4",
     "crispy_forms",
-    "taxi",
 ]
 
 MIDDLEWARE = [
@@ -144,4 +144,3 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-

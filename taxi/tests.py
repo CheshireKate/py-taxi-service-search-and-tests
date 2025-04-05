@@ -5,7 +5,8 @@ from taxi.models import Driver, Car
 
 
 class FormTest(TestCase):
-
+    def setUp(self):
+        self.client = Client()
 
     def test_manufacturer_form_is_valid(self):
         form_data = {
@@ -14,14 +15,12 @@ class FormTest(TestCase):
         form = ManufacturerSearchForm(data=form_data)
         self.assertEqual(form.is_valid())
 
-
     def test_driver_form_is_valid(self):
         form_data = {
             "username": "M1"
         }
         form = DriverSearchForm(data=form_data)
         self.assertEqual(form.is_valid())
-
 
     def test_car_form_is_valid(self):
         form_data = {
